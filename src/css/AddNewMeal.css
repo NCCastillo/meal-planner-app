@@ -1,0 +1,12 @@
+.add-new-meal {
+  /*height: 50vh;*/
+  border: 5px solid red;
+}
+
+.add-new-meal h5 {
+  text-align: center;
+  padding: 15px;
+}
+.add-new-meal form {
+  padding: 20px 10px;
+}

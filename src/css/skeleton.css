@@ -120,13 +120,18 @@
 html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
-  font-size: 62.5%; }
+  height: 100%;
+  font-size: 62.5%; 
+}
 body {
+  min-height: 100%;
+  height: 100%;
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222; }
+  color: #222; 
+}
 
 
 /* Typography
@@ -417,3 +422,14 @@ there.
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
+/* Custom styles for the app */
+.main {
+  /* not sure if I am liking this. I have to do this in the other css files 
+    http://stackoverflow.com/questions/15021573/get-div-to-take-up-100-body-height-minus-fixed-height-header-and-footer
+  */
+  height: calc(100vh - 50px - 50px);
+  background-color: grey;
+  padding-bottom: 40px;
+}
+

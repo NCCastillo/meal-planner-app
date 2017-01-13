@@ -1,0 +1,5 @@
+.meals {
+  overflow: auto;
+  border: 5px solid red;
+  height: calc(66vh - 50px - 50px);
+}
